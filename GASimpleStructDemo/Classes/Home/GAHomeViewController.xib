@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAHomeViewController" customModule="GASimpleStructDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="classifyTopConstraint" destination="wBR-Du-pIk" id="CIx-i1-SjW"/>
+                <outlet property="classifyView" destination="dTj-3F-G5M" id="xQe-vo-wJ5"/>
+                <outlet property="contentView" destination="iN6-Oj-uu6" id="ljk-4g-7Xc"/>
+                <outlet property="lineView" destination="wtK-nJ-Zvy" id="9tr-le-5iM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTj-3F-G5M">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ7-aa-L5l">
+                            <rect key="frame" x="15" y="0.0" width="31" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="新闻">
+                                <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wtK-nJ-Zvy">
+                            <rect key="frame" x="15" y="40" width="30" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0Z-ex-eyL">
+                            <rect key="frame" x="66" y="0.0" width="31" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="视频">
+                                <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPf-nJ-GC2">
+                            <rect key="frame" x="117" y="0.0" width="31" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="关注">
+                                <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="lPf-nJ-GC2" firstAttribute="top" secondItem="dTj-3F-G5M" secondAttribute="top" id="8iM-Ql-BkP"/>
+                        <constraint firstItem="lPf-nJ-GC2" firstAttribute="leading" secondItem="i0Z-ex-eyL" secondAttribute="trailing" constant="20" id="FFg-TP-C41"/>
+                        <constraint firstAttribute="bottom" secondItem="hZ7-aa-L5l" secondAttribute="bottom" id="Nm0-KB-ecJ"/>
+                        <constraint firstItem="hZ7-aa-L5l" firstAttribute="leading" secondItem="dTj-3F-G5M" secondAttribute="leading" constant="15" id="Ths-2s-Qnz"/>
+                        <constraint firstAttribute="bottom" secondItem="lPf-nJ-GC2" secondAttribute="bottom" id="UpU-vd-ccP"/>
+                        <constraint firstItem="hZ7-aa-L5l" firstAttribute="top" secondItem="dTj-3F-G5M" secondAttribute="top" id="j2n-Pw-7qT"/>
+                        <constraint firstItem="i0Z-ex-eyL" firstAttribute="top" secondItem="dTj-3F-G5M" secondAttribute="top" id="jcn-a8-Ozs"/>
+                        <constraint firstAttribute="bottom" secondItem="i0Z-ex-eyL" secondAttribute="bottom" id="pwG-xi-3QZ"/>
+                        <constraint firstItem="i0Z-ex-eyL" firstAttribute="leading" secondItem="hZ7-aa-L5l" secondAttribute="trailing" constant="20" id="qfU-qN-NNi"/>
+                        <constraint firstAttribute="height" constant="50" id="uxq-HR-WIi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN6-Oj-uu6">
+                    <rect key="frame" x="0.0" y="50" width="414" height="846"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iN6-Oj-uu6" firstAttribute="top" secondItem="dTj-3F-G5M" secondAttribute="bottom" id="1qe-62-jH1"/>
+                <constraint firstAttribute="bottom" secondItem="iN6-Oj-uu6" secondAttribute="bottom" id="7kA-sr-4pj"/>
+                <constraint firstItem="iN6-Oj-uu6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dsg-BF-SJ4"/>
+                <constraint firstAttribute="trailing" secondItem="dTj-3F-G5M" secondAttribute="trailing" id="Xz5-Wv-Ypi"/>
+                <constraint firstAttribute="trailing" secondItem="iN6-Oj-uu6" secondAttribute="trailing" id="rDr-zb-Wsj"/>
+                <constraint firstItem="dTj-3F-G5M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tJT-5N-YpY"/>
+                <constraint firstItem="dTj-3F-G5M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wBR-Du-pIk"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </view>
+    </objects>
+</document>

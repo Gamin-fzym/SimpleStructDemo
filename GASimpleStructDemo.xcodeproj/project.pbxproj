@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2293DE52405165600EB1D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293DE42405165600EB1D98 /* AppDelegate.swift */; };
+		E2293DE92405165600EB1D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293DE82405165600EB1D98 /* ViewController.swift */; };
+		E2293DEC2405165600EB1D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2293DEA2405165600EB1D98 /* Main.storyboard */; };
+		E2293DEE2405165700EB1D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2293DED2405165700EB1D98 /* Assets.xcassets */; };
+		E2293DF12405165700EB1D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2293DEF2405165700EB1D98 /* LaunchScreen.storyboard */; };
+		E2293DFC2405165700EB1D98 /* GASimpleStructDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293DFB2405165700EB1D98 /* GASimpleStructDemoTests.swift */; };
+		E2293E072405165700EB1D98 /* GASimpleStructDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E062405165700EB1D98 /* GASimpleStructDemoUITests.swift */; };
+		E2293E19240525B600EB1D98 /* GAGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E17240525B600EB1D98 /* GAGuideViewController.swift */; };
+		E2293E1A240525B600EB1D98 /* GAGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E18240525B600EB1D98 /* GAGuideViewController.xib */; };
+		E2293E1C2405262700EB1D98 /* GARootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E1B2405262700EB1D98 /* GARootTabBarController.swift */; };
+		E2293E262405279C00EB1D98 /* GABaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E252405279C00EB1D98 /* GABaseViewController.swift */; };
+		E2293E29240527D900EB1D98 /* GAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E27240527D900EB1D98 /* GAHomeViewController.swift */; };
+		E2293E2A240527D900EB1D98 /* GAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E28240527D900EB1D98 /* GAHomeViewController.xib */; };
+		E2293E2D240527EC00EB1D98 /* GAShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E2B240527EC00EB1D98 /* GAShopViewController.swift */; };
+		E2293E2E240527EC00EB1D98 /* GAShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E2C240527EC00EB1D98 /* GAShopViewController.xib */; };
+		E2293E31240527FF00EB1D98 /* GAPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E2F240527FF00EB1D98 /* GAPublishViewController.swift */; };
+		E2293E32240527FF00EB1D98 /* GAPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E30240527FF00EB1D98 /* GAPublishViewController.xib */; };
+		E2293E352405281000EB1D98 /* GAMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E332405280F00EB1D98 /* GAMessageViewController.swift */; };
+		E2293E362405281000EB1D98 /* GAMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E342405281000EB1D98 /* GAMessageViewController.xib */; };
+		E2293E392405282000EB1D98 /* GAMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E372405281F00EB1D98 /* GAMineViewController.swift */; };
+		E2293E3A2405282000EB1D98 /* GAMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E382405282000EB1D98 /* GAMineViewController.xib */; };
+		E2293E4024052C5400EB1D98 /* GAGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E3E24052C5400EB1D98 /* GAGuideCell.swift */; };
+		E2293E4124052C5400EB1D98 /* GAGuideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E3F24052C5400EB1D98 /* GAGuideCell.xib */; };
+		E2293E4324052C6C00EB1D98 /* GAGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E4224052C6C00EB1D98 /* GAGuideModel.swift */; };
+		E2293E4A2405386700EB1D98 /* guide4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2293E452405386700EB1D98 /* guide4.jpg */; };
+		E2293E4B2405386700EB1D98 /* guide2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2293E462405386700EB1D98 /* guide2.jpg */; };
+		E2293E4C2405386700EB1D98 /* guide3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2293E472405386700EB1D98 /* guide3.jpg */; };
+		E2293E4D2405386700EB1D98 /* guide1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2293E482405386700EB1D98 /* guide1.jpg */; };
+		E2293E4E2405386700EB1D98 /* guide0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2293E492405386700EB1D98 /* guide0.jpg */; };
+		E2293E5424065F5B00EB1D98 /* CALayer+XibBorderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E5324065F5B00EB1D98 /* CALayer+XibBorderColor.swift */; };
+		E2293E572406609700EB1D98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2293E562406609700EB1D98 /* QuartzCore.framework */; };
+		E2293E6C24066AB300EB1D98 /* qp-sy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E5A24066AAD00EB1D98 /* qp-sy@3x.png */; };
+		E2293E6D24066AB300EB1D98 /* qp-sy-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E5B24066AAD00EB1D98 /* qp-sy-sel@2x.png */; };
+		E2293E6E24066AB300EB1D98 /* qp-xx-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E5C24066AAD00EB1D98 /* qp-xx-sel@2x.png */; };
+		E2293E6F24066AB300EB1D98 /* qp-fb-sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E5D24066AAD00EB1D98 /* qp-fb-sel@3x.png */; };
+		E2293E7024066AB300EB1D98 /* qp-sc-sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E5E24066AAD00EB1D98 /* qp-sc-sel@3x.png */; };
+		E2293E7124066AB300EB1D98 /* qp-sy-sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E5F24066AAE00EB1D98 /* qp-sy-sel@3x.png */; };
+		E2293E7224066AB300EB1D98 /* qp-gr-sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6024066AAE00EB1D98 /* qp-gr-sel@3x.png */; };
+		E2293E7324066AB300EB1D98 /* qp-sy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6124066AAE00EB1D98 /* qp-sy@2x.png */; };
+		E2293E7424066AB300EB1D98 /* qp-sc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6224066AAE00EB1D98 /* qp-sc@2x.png */; };
+		E2293E7524066AB300EB1D98 /* qp-gr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6324066AAF00EB1D98 /* qp-gr@3x.png */; };
+		E2293E7624066AB300EB1D98 /* qp-xx-sel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6424066AB100EB1D98 /* qp-xx-sel@3x.png */; };
+		E2293E7724066AB300EB1D98 /* qp-gr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6524066AB100EB1D98 /* qp-gr@2x.png */; };
+		E2293E7824066AB300EB1D98 /* qp-xx@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6624066AB200EB1D98 /* qp-xx@3x.png */; };
+		E2293E7924066AB300EB1D98 /* qp-sc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6724066AB200EB1D98 /* qp-sc@3x.png */; };
+		E2293E7A24066AB300EB1D98 /* qp-xx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6824066AB200EB1D98 /* qp-xx@2x.png */; };
+		E2293E7B24066AB300EB1D98 /* qp-sc-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6924066AB200EB1D98 /* qp-sc-sel@2x.png */; };
+		E2293E7C24066AB300EB1D98 /* qp-gr-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6A24066AB300EB1D98 /* qp-gr-sel@2x.png */; };
+		E2293E7D24066AB300EB1D98 /* qp-fb-sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E6B24066AB300EB1D98 /* qp-fb-sel@2x.png */; };
+		E2293E7F24066C3200EB1D98 /* GABaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E7E24066C3200EB1D98 /* GABaseNavigationController.swift */; };
+		E2293E8224066EBC00EB1D98 /* tabbar_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E8024066EBC00EB1D98 /* tabbar_add@2x.png */; };
+		E2293E8324066EBC00EB1D98 /* tabbar_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2293E8124066EBC00EB1D98 /* tabbar_add@3x.png */; };
+		E2293E8624066FAF00EB1D98 /* GAConfigurationFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E8524066FAF00EB1D98 /* GAConfigurationFile.swift */; };
+		E2293E8B240685D500EB1D98 /* GANewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E89240685D500EB1D98 /* GANewsViewController.swift */; };
+		E2293E8C240685D500EB1D98 /* GANewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E8A240685D500EB1D98 /* GANewsViewController.xib */; };
+		E2293E8F240685F900EB1D98 /* GAVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E8D240685F900EB1D98 /* GAVideoViewController.swift */; };
+		E2293E90240685F900EB1D98 /* GAVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E8E240685F900EB1D98 /* GAVideoViewController.xib */; };
+		E2293E932406868600EB1D98 /* GAAttentionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E912406868600EB1D98 /* GAAttentionViewController.swift */; };
+		E2293E942406868600EB1D98 /* GAAttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2293E922406868600EB1D98 /* GAAttentionViewController.xib */; };
+		E2293E962407CD4000EB1D98 /* GABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2293E952407CD4000EB1D98 /* GABaseView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2293DF82405165700EB1D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2293DD92405165600EB1D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2293DE02405165600EB1D98;
+			remoteInfo = GASimpleStructDemo;
+		};
+		E2293E032405165700EB1D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2293DD92405165600EB1D98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2293DE02405165600EB1D98;
+			remoteInfo = GASimpleStructDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2293DE12405165600EB1D98 /* GASimpleStructDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GASimpleStructDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2293DE42405165600EB1D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2293DE82405165600EB1D98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2293DEB2405165600EB1D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2293DED2405165700EB1D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2293DF02405165700EB1D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2293DF22405165700EB1D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2293DF72405165700EB1D98 /* GASimpleStructDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GASimpleStructDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2293DFB2405165700EB1D98 /* GASimpleStructDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASimpleStructDemoTests.swift; sourceTree = "<group>"; };
+		E2293DFD2405165700EB1D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2293E022405165700EB1D98 /* GASimpleStructDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GASimpleStructDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2293E062405165700EB1D98 /* GASimpleStructDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASimpleStructDemoUITests.swift; sourceTree = "<group>"; };
+		E2293E082405165700EB1D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2293E17240525B600EB1D98 /* GAGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAGuideViewController.swift; sourceTree = "<group>"; };
+		E2293E18240525B600EB1D98 /* GAGuideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAGuideViewController.xib; sourceTree = "<group>"; };
+		E2293E1B2405262700EB1D98 /* GARootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GARootTabBarController.swift; sourceTree = "<group>"; };
+		E2293E252405279C00EB1D98 /* GABaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GABaseViewController.swift; sourceTree = "<group>"; };
+		E2293E27240527D900EB1D98 /* GAHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAHomeViewController.swift; sourceTree = "<group>"; };
+		E2293E28240527D900EB1D98 /* GAHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAHomeViewController.xib; sourceTree = "<group>"; };
+		E2293E2B240527EC00EB1D98 /* GAShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAShopViewController.swift; sourceTree = "<group>"; };
+		E2293E2C240527EC00EB1D98 /* GAShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAShopViewController.xib; sourceTree = "<group>"; };
+		E2293E2F240527FF00EB1D98 /* GAPublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPublishViewController.swift; sourceTree = "<group>"; };
+		E2293E30240527FF00EB1D98 /* GAPublishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAPublishViewController.xib; sourceTree = "<group>"; };
+		E2293E332405280F00EB1D98 /* GAMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAMessageViewController.swift; sourceTree = "<group>"; };
+		E2293E342405281000EB1D98 /* GAMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAMessageViewController.xib; sourceTree = "<group>"; };
+		E2293E372405281F00EB1D98 /* GAMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAMineViewController.swift; sourceTree = "<group>"; };
+		E2293E382405282000EB1D98 /* GAMineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAMineViewController.xib; sourceTree = "<group>"; };
+		E2293E3E24052C5400EB1D98 /* GAGuideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAGuideCell.swift; sourceTree = "<group>"; };
+		E2293E3F24052C5400EB1D98 /* GAGuideCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAGuideCell.xib; sourceTree = "<group>"; };
+		E2293E4224052C6C00EB1D98 /* GAGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAGuideModel.swift; sourceTree = "<group>"; };
+		E2293E452405386700EB1D98 /* guide4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide4.jpg; sourceTree = "<group>"; };
+		E2293E462405386700EB1D98 /* guide2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide2.jpg; sourceTree = "<group>"; };
+		E2293E472405386700EB1D98 /* guide3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide3.jpg; sourceTree = "<group>"; };
+		E2293E482405386700EB1D98 /* guide1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide1.jpg; sourceTree = "<group>"; };
+		E2293E492405386700EB1D98 /* guide0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guide0.jpg; sourceTree = "<group>"; };
+		E2293E5324065F5B00EB1D98 /* CALayer+XibBorderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+XibBorderColor.swift"; sourceTree = "<group>"; };
+		E2293E562406609700EB1D98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E2293E5A24066AAD00EB1D98 /* qp-sy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sy@3x.png"; sourceTree = "<group>"; };
+		E2293E5B24066AAD00EB1D98 /* qp-sy-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sy-sel@2x.png"; sourceTree = "<group>"; };
+		E2293E5C24066AAD00EB1D98 /* qp-xx-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-xx-sel@2x.png"; sourceTree = "<group>"; };
+		E2293E5D24066AAD00EB1D98 /* qp-fb-sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-fb-sel@3x.png"; sourceTree = "<group>"; };
+		E2293E5E24066AAD00EB1D98 /* qp-sc-sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sc-sel@3x.png"; sourceTree = "<group>"; };
+		E2293E5F24066AAE00EB1D98 /* qp-sy-sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sy-sel@3x.png"; sourceTree = "<group>"; };
+		E2293E6024066AAE00EB1D98 /* qp-gr-sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-gr-sel@3x.png"; sourceTree = "<group>"; };
+		E2293E6124066AAE00EB1D98 /* qp-sy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sy@2x.png"; sourceTree = "<group>"; };
+		E2293E6224066AAE00EB1D98 /* qp-sc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sc@2x.png"; sourceTree = "<group>"; };
+		E2293E6324066AAF00EB1D98 /* qp-gr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-gr@3x.png"; sourceTree = "<group>"; };
+		E2293E6424066AB100EB1D98 /* qp-xx-sel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-xx-sel@3x.png"; sourceTree = "<group>"; };
+		E2293E6524066AB100EB1D98 /* qp-gr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-gr@2x.png"; sourceTree = "<group>"; };
+		E2293E6624066AB200EB1D98 /* qp-xx@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-xx@3x.png"; sourceTree = "<group>"; };
+		E2293E6724066AB200EB1D98 /* qp-sc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sc@3x.png"; sourceTree = "<group>"; };
+		E2293E6824066AB200EB1D98 /* qp-xx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-xx@2x.png"; sourceTree = "<group>"; };
+		E2293E6924066AB200EB1D98 /* qp-sc-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-sc-sel@2x.png"; sourceTree = "<group>"; };
+		E2293E6A24066AB300EB1D98 /* qp-gr-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-gr-sel@2x.png"; sourceTree = "<group>"; };
+		E2293E6B24066AB300EB1D98 /* qp-fb-sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qp-fb-sel@2x.png"; sourceTree = "<group>"; };
+		E2293E7E24066C3200EB1D98 /* GABaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GABaseNavigationController.swift; sourceTree = "<group>"; };
+		E2293E8024066EBC00EB1D98 /* tabbar_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_add@2x.png"; sourceTree = "<group>"; };
+		E2293E8124066EBC00EB1D98 /* tabbar_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_add@3x.png"; sourceTree = "<group>"; };
+		E2293E8524066FAF00EB1D98 /* GAConfigurationFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAConfigurationFile.swift; sourceTree = "<group>"; };
+		E2293E89240685D500EB1D98 /* GANewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GANewsViewController.swift; sourceTree = "<group>"; };
+		E2293E8A240685D500EB1D98 /* GANewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GANewsViewController.xib; sourceTree = "<group>"; };
+		E2293E8D240685F900EB1D98 /* GAVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAVideoViewController.swift; sourceTree = "<group>"; };
+		E2293E8E240685F900EB1D98 /* GAVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAVideoViewController.xib; sourceTree = "<group>"; };
+		E2293E912406868600EB1D98 /* GAAttentionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAAttentionViewController.swift; sourceTree = "<group>"; };
+		E2293E922406868600EB1D98 /* GAAttentionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAAttentionViewController.xib; sourceTree = "<group>"; };
+		E2293E952407CD4000EB1D98 /* GABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GABaseView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2293DDE2405165600EB1D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2293E572406609700EB1D98 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2293DF42405165700EB1D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2293DFF2405165700EB1D98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2293DD82405165600EB1D98 = {
+			isa = PBXGroup;
+			children = (
+				E2293DE32405165600EB1D98 /* GASimpleStructDemo */,
+				E2293DFA2405165700EB1D98 /* GASimpleStructDemoTests */,
+				E2293E052405165700EB1D98 /* GASimpleStructDemoUITests */,
+				E2293DE22405165600EB1D98 /* Products */,
+				E2293E552406609500EB1D98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2293DE22405165600EB1D98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2293DE12405165600EB1D98 /* GASimpleStructDemo.app */,
+				E2293DF72405165700EB1D98 /* GASimpleStructDemoTests.xctest */,
+				E2293E022405165700EB1D98 /* GASimpleStructDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2293DE32405165600EB1D98 /* GASimpleStructDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E2293DE42405165600EB1D98 /* AppDelegate.swift */,
+				E2293DE82405165600EB1D98 /* ViewController.swift */,
+				E2293E8424066F6D00EB1D98 /* Tools */,
+				E2293E162405259600EB1D98 /* Guide */,
+				E2293E142405251500EB1D98 /* TabBar */,
+				E2293E222405273C00EB1D98 /* Base */,
+				E2293E21240526E800EB1D98 /* Classes */,
+				E2293E582406618B00EB1D98 /* Category */,
+				E2293DEA2405165600EB1D98 /* Main.storyboard */,
+				E2293DED2405165700EB1D98 /* Assets.xcassets */,
+				E2293DEF2405165700EB1D98 /* LaunchScreen.storyboard */,
+				E2293DF22405165700EB1D98 /* Info.plist */,
+			);
+			path = GASimpleStructDemo;
+			sourceTree = "<group>";
+		};
+		E2293DFA2405165700EB1D98 /* GASimpleStructDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2293DFB2405165700EB1D98 /* GASimpleStructDemoTests.swift */,
+				E2293DFD2405165700EB1D98 /* Info.plist */,
+			);
+			path = GASimpleStructDemoTests;
+			sourceTree = "<group>";
+		};
+		E2293E052405165700EB1D98 /* GASimpleStructDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E062405165700EB1D98 /* GASimpleStructDemoUITests.swift */,
+				E2293E082405165700EB1D98 /* Info.plist */,
+			);
+			path = GASimpleStructDemoUITests;
+			sourceTree = "<group>";
+		};
+		E2293E142405251500EB1D98 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E1B2405262700EB1D98 /* GARootTabBarController.swift */,
+				E2293E5924066A9100EB1D98 /* Resource */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E2293E152405251E00EB1D98 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E27240527D900EB1D98 /* GAHomeViewController.swift */,
+				E2293E28240527D900EB1D98 /* GAHomeViewController.xib */,
+				E2293E872406859100EB1D98 /* Content */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E2293E162405259600EB1D98 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E3D24052C2900EB1D98 /* Controller */,
+				E2293E3C24052C2300EB1D98 /* View */,
+				E2293E3B24052C1C00EB1D98 /* Model */,
+				E2293E44240537F700EB1D98 /* Resource */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		E2293E1D2405265500EB1D98 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E2B240527EC00EB1D98 /* GAShopViewController.swift */,
+				E2293E2C240527EC00EB1D98 /* GAShopViewController.xib */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		E2293E1E2405267B00EB1D98 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E2F240527FF00EB1D98 /* GAPublishViewController.swift */,
+				E2293E30240527FF00EB1D98 /* GAPublishViewController.xib */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		E2293E1F2405268500EB1D98 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E332405280F00EB1D98 /* GAMessageViewController.swift */,
+				E2293E342405281000EB1D98 /* GAMessageViewController.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E2293E202405268C00EB1D98 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E372405281F00EB1D98 /* GAMineViewController.swift */,
+				E2293E382405282000EB1D98 /* GAMineViewController.xib */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		E2293E21240526E800EB1D98 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E152405251E00EB1D98 /* Home */,
+				E2293E1D2405265500EB1D98 /* Shop */,
+				E2293E1E2405267B00EB1D98 /* Publish */,
+				E2293E1F2405268500EB1D98 /* Message */,
+				E2293E202405268C00EB1D98 /* Mine */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E2293E222405273C00EB1D98 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E7E24066C3200EB1D98 /* GABaseNavigationController.swift */,
+				E2293E252405279C00EB1D98 /* GABaseViewController.swift */,
+				E2293E952407CD4000EB1D98 /* GABaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E2293E3B24052C1C00EB1D98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E4224052C6C00EB1D98 /* GAGuideModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2293E3C24052C2300EB1D98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E3E24052C5400EB1D98 /* GAGuideCell.swift */,
+				E2293E3F24052C5400EB1D98 /* GAGuideCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2293E3D24052C2900EB1D98 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E17240525B600EB1D98 /* GAGuideViewController.swift */,
+				E2293E18240525B600EB1D98 /* GAGuideViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2293E44240537F700EB1D98 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E492405386700EB1D98 /* guide0.jpg */,
+				E2293E482405386700EB1D98 /* guide1.jpg */,
+				E2293E462405386700EB1D98 /* guide2.jpg */,
+				E2293E472405386700EB1D98 /* guide3.jpg */,
+				E2293E452405386700EB1D98 /* guide4.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E2293E552406609500EB1D98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E562406609700EB1D98 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2293E582406618B00EB1D98 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E5324065F5B00EB1D98 /* CALayer+XibBorderColor.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E2293E5924066A9100EB1D98 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E8024066EBC00EB1D98 /* tabbar_add@2x.png */,
+				E2293E8124066EBC00EB1D98 /* tabbar_add@3x.png */,
+				E2293E6B24066AB300EB1D98 /* qp-fb-sel@2x.png */,
+				E2293E5D24066AAD00EB1D98 /* qp-fb-sel@3x.png */,
+				E2293E6A24066AB300EB1D98 /* qp-gr-sel@2x.png */,
+				E2293E6024066AAE00EB1D98 /* qp-gr-sel@3x.png */,
+				E2293E6524066AB100EB1D98 /* qp-gr@2x.png */,
+				E2293E6324066AAF00EB1D98 /* qp-gr@3x.png */,
+				E2293E6924066AB200EB1D98 /* qp-sc-sel@2x.png */,
+				E2293E5E24066AAD00EB1D98 /* qp-sc-sel@3x.png */,
+				E2293E6224066AAE00EB1D98 /* qp-sc@2x.png */,
+				E2293E6724066AB200EB1D98 /* qp-sc@3x.png */,
+				E2293E5B24066AAD00EB1D98 /* qp-sy-sel@2x.png */,
+				E2293E5F24066AAE00EB1D98 /* qp-sy-sel@3x.png */,
+				E2293E6124066AAE00EB1D98 /* qp-sy@2x.png */,
+				E2293E5A24066AAD00EB1D98 /* qp-sy@3x.png */,
+				E2293E5C24066AAD00EB1D98 /* qp-xx-sel@2x.png */,
+				E2293E6424066AB100EB1D98 /* qp-xx-sel@3x.png */,
+				E2293E6824066AB200EB1D98 /* qp-xx@2x.png */,
+				E2293E6624066AB200EB1D98 /* qp-xx@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E2293E8424066F6D00EB1D98 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E8524066FAF00EB1D98 /* GAConfigurationFile.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E2293E872406859100EB1D98 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				E2293E89240685D500EB1D98 /* GANewsViewController.swift */,
+				E2293E8A240685D500EB1D98 /* GANewsViewController.xib */,
+				E2293E8D240685F900EB1D98 /* GAVideoViewController.swift */,
+				E2293E8E240685F900EB1D98 /* GAVideoViewController.xib */,
+				E2293E912406868600EB1D98 /* GAAttentionViewController.swift */,
+				E2293E922406868600EB1D98 /* GAAttentionViewController.xib */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2293DE02405165600EB1D98 /* GASimpleStructDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2293E0B2405165700EB1D98 /* Build configuration list for PBXNativeTarget "GASimpleStructDemo" */;
+			buildPhases = (
+				E2293DDD2405165600EB1D98 /* Sources */,
+				E2293DDE2405165600EB1D98 /* Frameworks */,
+				E2293DDF2405165600EB1D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GASimpleStructDemo;
+			productName = GASimpleStructDemo;
+			productReference = E2293DE12405165600EB1D98 /* GASimpleStructDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2293DF62405165700EB1D98 /* GASimpleStructDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2293E0E2405165700EB1D98 /* Build configuration list for PBXNativeTarget "GASimpleStructDemoTests" */;
+			buildPhases = (
+				E2293DF32405165700EB1D98 /* Sources */,
+				E2293DF42405165700EB1D98 /* Frameworks */,
+				E2293DF52405165700EB1D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2293DF92405165700EB1D98 /* PBXTargetDependency */,
+			);
+			name = GASimpleStructDemoTests;
+			productName = GASimpleStructDemoTests;
+			productReference = E2293DF72405165700EB1D98 /* GASimpleStructDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2293E012405165700EB1D98 /* GASimpleStructDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2293E112405165700EB1D98 /* Build configuration list for PBXNativeTarget "GASimpleStructDemoUITests" */;
+			buildPhases = (
+				E2293DFE2405165700EB1D98 /* Sources */,
+				E2293DFF2405165700EB1D98 /* Frameworks */,
+				E2293E002405165700EB1D98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2293E042405165700EB1D98 /* PBXTargetDependency */,
+			);
+			name = GASimpleStructDemoUITests;
+			productName = GASimpleStructDemoUITests;
+			productReference = E2293E022405165700EB1D98 /* GASimpleStructDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2293DD92405165600EB1D98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GA;
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = gamin.com;
+				TargetAttributes = {
+					E2293DE02405165600EB1D98 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E2293DF62405165700EB1D98 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E2293DE02405165600EB1D98;
+					};
+					E2293E012405165700EB1D98 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E2293DE02405165600EB1D98;
+					};
+				};
+			};
+			buildConfigurationList = E2293DDC2405165600EB1D98 /* Build configuration list for PBXProject "GASimpleStructDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2293DD82405165600EB1D98;
+			productRefGroup = E2293DE22405165600EB1D98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2293DE02405165600EB1D98 /* GASimpleStructDemo */,
+				E2293DF62405165700EB1D98 /* GASimpleStructDemoTests */,
+				E2293E012405165700EB1D98 /* GASimpleStructDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2293DDF2405165600EB1D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2293E4D2405386700EB1D98 /* guide1.jpg in Resources */,
+				E2293E4C2405386700EB1D98 /* guide3.jpg in Resources */,
+				E2293E362405281000EB1D98 /* GAMessageViewController.xib in Resources */,
+				E2293E2E240527EC00EB1D98 /* GAShopViewController.xib in Resources */,
+				E2293E6C24066AB300EB1D98 /* qp-sy@3x.png in Resources */,
+				E2293E7C24066AB300EB1D98 /* qp-gr-sel@2x.png in Resources */,
+				E2293E7624066AB300EB1D98 /* qp-xx-sel@3x.png in Resources */,
+				E2293E3A2405282000EB1D98 /* GAMineViewController.xib in Resources */,
+				E2293E7924066AB300EB1D98 /* qp-sc@3x.png in Resources */,
+				E2293E7324066AB300EB1D98 /* qp-sy@2x.png in Resources */,
+				E2293E4E2405386700EB1D98 /* guide0.jpg in Resources */,
+				E2293E7124066AB300EB1D98 /* qp-sy-sel@3x.png in Resources */,
+				E2293E7224066AB300EB1D98 /* qp-gr-sel@3x.png in Resources */,
+				E2293DF12405165700EB1D98 /* LaunchScreen.storyboard in Resources */,
+				E2293E7824066AB300EB1D98 /* qp-xx@3x.png in Resources */,
+				E2293E6F24066AB300EB1D98 /* qp-fb-sel@3x.png in Resources */,
+				E2293E4124052C5400EB1D98 /* GAGuideCell.xib in Resources */,
+				E2293DEE2405165700EB1D98 /* Assets.xcassets in Resources */,
+				E2293E7024066AB300EB1D98 /* qp-sc-sel@3x.png in Resources */,
+				E2293E7B24066AB300EB1D98 /* qp-sc-sel@2x.png in Resources */,
+				E2293E6E24066AB300EB1D98 /* qp-xx-sel@2x.png in Resources */,
+				E2293E7524066AB300EB1D98 /* qp-gr@3x.png in Resources */,
+				E2293E90240685F900EB1D98 /* GAVideoViewController.xib in Resources */,
+				E2293E6D24066AB300EB1D98 /* qp-sy-sel@2x.png in Resources */,
+				E2293DEC2405165600EB1D98 /* Main.storyboard in Resources */,
+				E2293E8324066EBC00EB1D98 /* tabbar_add@3x.png in Resources */,
+				E2293E2A240527D900EB1D98 /* GAHomeViewController.xib in Resources */,
+				E2293E942406868600EB1D98 /* GAAttentionViewController.xib in Resources */,
+				E2293E7A24066AB300EB1D98 /* qp-xx@2x.png in Resources */,
+				E2293E1A240525B600EB1D98 /* GAGuideViewController.xib in Resources */,
+				E2293E4B2405386700EB1D98 /* guide2.jpg in Resources */,
+				E2293E7424066AB300EB1D98 /* qp-sc@2x.png in Resources */,
+				E2293E7D24066AB300EB1D98 /* qp-fb-sel@2x.png in Resources */,
+				E2293E32240527FF00EB1D98 /* GAPublishViewController.xib in Resources */,
+				E2293E4A2405386700EB1D98 /* guide4.jpg in Resources */,
+				E2293E8C240685D500EB1D98 /* GANewsViewController.xib in Resources */,
+				E2293E8224066EBC00EB1D98 /* tabbar_add@2x.png in Resources */,
+				E2293E7724066AB300EB1D98 /* qp-gr@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2293DF52405165700EB1D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2293E002405165700EB1D98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2293DDD2405165600EB1D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2293E4024052C5400EB1D98 /* GAGuideCell.swift in Sources */,
+				E2293E19240525B600EB1D98 /* GAGuideViewController.swift in Sources */,
+				E2293E8624066FAF00EB1D98 /* GAConfigurationFile.swift in Sources */,
+				E2293DE92405165600EB1D98 /* ViewController.swift in Sources */,
+				E2293E5424065F5B00EB1D98 /* CALayer+XibBorderColor.swift in Sources */,
+				E2293E2D240527EC00EB1D98 /* GAShopViewController.swift in Sources */,
+				E2293E392405282000EB1D98 /* GAMineViewController.swift in Sources */,
+				E2293E932406868600EB1D98 /* GAAttentionViewController.swift in Sources */,
+				E2293E7F24066C3200EB1D98 /* GABaseNavigationController.swift in Sources */,
+				E2293DE52405165600EB1D98 /* AppDelegate.swift in Sources */,
+				E2293E8B240685D500EB1D98 /* GANewsViewController.swift in Sources */,
+				E2293E29240527D900EB1D98 /* GAHomeViewController.swift in Sources */,
+				E2293E262405279C00EB1D98 /* GABaseViewController.swift in Sources */,
+				E2293E4324052C6C00EB1D98 /* GAGuideModel.swift in Sources */,
+				E2293E31240527FF00EB1D98 /* GAPublishViewController.swift in Sources */,
+				E2293E8F240685F900EB1D98 /* GAVideoViewController.swift in Sources */,
+				E2293E1C2405262700EB1D98 /* GARootTabBarController.swift in Sources */,
+				E2293E352405281000EB1D98 /* GAMessageViewController.swift in Sources */,
+				E2293E962407CD4000EB1D98 /* GABaseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2293DF32405165700EB1D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2293DFC2405165700EB1D98 /* GASimpleStructDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2293DFE2405165700EB1D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2293E072405165700EB1D98 /* GASimpleStructDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2293DF92405165700EB1D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2293DE02405165600EB1D98 /* GASimpleStructDemo */;
+			targetProxy = E2293DF82405165700EB1D98 /* PBXContainerItemProxy */;
+		};
+		E2293E042405165700EB1D98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2293DE02405165600EB1D98 /* GASimpleStructDemo */;
+			targetProxy = E2293E032405165700EB1D98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2293DEA2405165600EB1D98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2293DEB2405165600EB1D98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2293DEF2405165700EB1D98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2293DF02405165700EB1D98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2293E092405165700EB1D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2293E0A2405165700EB1D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2293E0C2405165700EB1D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				INFOPLIST_FILE = GASimpleStructDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamin.www.GASimpleStructDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2293E0D2405165700EB1D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				INFOPLIST_FILE = GASimpleStructDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamin.www.GASimpleStructDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E2293E0F2405165700EB1D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GASimpleStructDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamin.www.GASimpleStructDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GASimpleStructDemo.app/GASimpleStructDemo";
+			};
+			name = Debug;
+		};
+		E2293E102405165700EB1D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GASimpleStructDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamin.www.GASimpleStructDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GASimpleStructDemo.app/GASimpleStructDemo";
+			};
+			name = Release;
+		};
+		E2293E122405165700EB1D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GASimpleStructDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamin.www.GASimpleStructDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GASimpleStructDemo;
+			};
+			name = Debug;
+		};
+		E2293E132405165700EB1D98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GASimpleStructDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamin.www.GASimpleStructDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GASimpleStructDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2293DDC2405165600EB1D98 /* Build configuration list for PBXProject "GASimpleStructDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2293E092405165700EB1D98 /* Debug */,
+				E2293E0A2405165700EB1D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2293E0B2405165700EB1D98 /* Build configuration list for PBXNativeTarget "GASimpleStructDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2293E0C2405165700EB1D98 /* Debug */,
+				E2293E0D2405165700EB1D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2293E0E2405165700EB1D98 /* Build configuration list for PBXNativeTarget "GASimpleStructDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2293E0F2405165700EB1D98 /* Debug */,
+				E2293E102405165700EB1D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2293E112405165700EB1D98 /* Build configuration list for PBXNativeTarget "GASimpleStructDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2293E122405165700EB1D98 /* Debug */,
+				E2293E132405165700EB1D98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2293DD92405165600EB1D98 /* Project object */;
+}
