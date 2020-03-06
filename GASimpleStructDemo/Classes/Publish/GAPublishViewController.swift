@@ -12,6 +12,7 @@ class GAPublishViewController: GABaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
     }
 
 }

@@ -23,6 +23,10 @@ class GARootTabBarController: UITabBarController, UITabBarControllerDelegate {
         setupChildController(childVC: GAMineViewController(), norImageName: "qp-gr.png", selectedImageName: "qp-gr-sel.png", title: "我的");
                 
         setupSeparateLineColor();
+        // 隐藏tabbar上部的分隔线
+        //guard self.hideTabbarLine else {
+        //    return;
+        //}
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +38,21 @@ class GARootTabBarController: UITabBarController, UITabBarControllerDelegate {
         super.viewWillDisappear(animated);
         UITabBar.appearance().isTranslucent = false;
     }
+    
+    // 隐藏tabbar上部的分隔线
+    lazy var hideTabbarLine: Bool = {
+        for view in self.tabBar.subviews {
+        if view.frame.width == UIScreen.main.bounds.size.width {
+               for image in view.subviews {
+                    if image.frame.height < 2 {
+                        image.isHidden = true;
+                        return true;
+                    }
+               }
+           }
+        }
+        return true;
+    }()
     
     // 改变分隔线颜色
     func setupSeparateLineColor () {

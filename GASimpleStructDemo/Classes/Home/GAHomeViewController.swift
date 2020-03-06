@@ -19,7 +19,7 @@ class GAHomeViewController: GABaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        classifyTopConstraint.constant = CGFloat(DE_STATUSBAR_HIGH + DE_NAV_HIGH);
+        classifyTopConstraint.constant = CGFloat(STATUSBAR_HIGH + NAV_HIGH);
         setupClassifyAction();
         setupChildViewControllerAction();
         tapClassifyButton(sender: classifyView.viewWithTag(1000) as! UIButton);
